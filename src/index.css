@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Manrope Variable', system-ui, sans-serif;
+  --font-body: 'Manrope Variable', system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* The hero switches to its widest layout at 1400px. */
+  --breakpoint-hero: 87.5rem;
+
+  --radius-4xl: 2rem;
+
+  --color-background: #ffffff;
+  --color-foreground: #141a19;
+  --color-muted-foreground: #5c6663;
+  --color-border: #e6e8e6;
+  /* Warm grey panels and the one brand accent, a calm sea green. */
+  --color-surface: #f5f4f1;
+  --color-accent: #0e7c66;
+  --color-accent-strong: #0a5f4e;
+  --color-accent-soft: #e2f1ec;
+  /* Soft highlight colours for notes, tags and slide backdrops. */
+  --color-tint-mint: #d9efe6;
+  --color-tint-sand: #f6ead2;
+  --color-tint-sky: #dcebf7;
+  --color-tint-rose: #f6dfe3;
+  --color-tint-lilac: #e6e1f4;
+
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(calc(-100% - var(--gap, 1rem)));
+    }
+  }
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+@utility container {
+  width: 100%;
+  max-width: var(--breakpoint-xl);
+  margin-inline: auto;
+  padding-inline: calc(var(--spacing) * 4);
+  @variant lg {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+}
+
+@utility display-headline-2 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  line-height: var(--text-3xl--line-height);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+  color: var(--color-foreground);
+  @variant sm {
+    font-size: var(--text-4xl);
+    line-height: var(--text-4xl--line-height);
+  }
+  @variant lg {
+    font-size: var(--text-5xl);
+    line-height: calc(var(--spacing) * 12);
+  }
+}
+
+@keyframes slideshow-progress {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* The feature scroller's next arrow nudges right to hint at more cards. */
+@keyframes feature-scroll-nudge {
+  0%,
+  70%,
+  100% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+  90% {
+    transform: translateX(0);
+  }
+}
