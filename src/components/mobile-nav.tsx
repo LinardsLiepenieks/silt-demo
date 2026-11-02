@@ -1,3 +1,4 @@
+import { Link } from '../lib/router';
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { headerCtas, type NavEntry } from '../content/navigation';
@@ -106,18 +107,18 @@ export function MobileNav({ entries }: { entries: NavEntry[] }) {
             </ul>
           </nav>
           <div className="grid grid-cols-2 gap-2 pt-4">
-            <a
+            <Link
               href={headerCtas.signIn.href}
               className="flex h-11 items-center justify-center rounded-lg border border-border text-sm font-semibold"
             >
               {headerCtas.signIn.label}
-            </a>
-            <a
+            </Link>
+            <Link
               href={headerCtas.trial.href}
               className="flex h-11 items-center justify-center rounded-lg bg-accent text-sm font-semibold text-white"
             >
               {headerCtas.trial.label}
-            </a>
+            </Link>
           </div>
         </div>,
         document.body,

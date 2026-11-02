@@ -7,7 +7,7 @@ import type { TicketProps } from '../components/ticket-mock';
 
 export const journeyHeading = {
   eyebrow: 'How it works',
-  title: ['Meet Maya.', "Here's one question, start to finish."],
+  title: ['See Halcyon at work.', "One customer's question, start to finish."],
   text: 'Maya just moved and needs her coffee order sent to the new address. Here is what happens next.',
 };
 
@@ -19,10 +19,10 @@ export const chatWidget: ChatWidgetProps = {
   status: 'Typically replies in 2 minutes',
   messages: [
     {
-      author: 'Tide',
+      author: 'Hal',
       time: '9:41',
       text: 'Hi Maya, welcome back. How can we help today?',
-      fromTide: true,
+      fromAssistant: true,
     },
     {
       author: 'Maya',
@@ -101,7 +101,7 @@ export const journeySlides: JourneySlide[] = [
     step: 'Routes',
     eyebrow: '9:42 am',
     title: 'It lands with the right person',
-    text: 'Tide tags the question, sees the order ships today and sends it to Orders with high priority. Nobody has to triage by hand.',
+    text: 'Hal tags the question, sees the order ships today and sends it to Orders with high priority. Nobody has to triage by hand.',
     tint: 'sky',
     mock: { kind: 'ticket', ...routedTicket },
   },
@@ -125,7 +125,7 @@ export const journeySlides: JourneySlide[] = [
     step: 'Learns',
     eyebrow: 'Monday',
     title: 'Next time, the answer is already there',
-    text: 'Tidewell spots that 38 people asked the same thing this week and suggests a help article, so the next Maya finds the answer herself.',
+    text: 'Halcyon spots that 38 people asked the same thing this week and suggests a help article, so the next Maya finds the answer herself.',
     tint: 'lilac',
     mock: { kind: 'insight', ...weeklyInsight },
   },

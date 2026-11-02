@@ -6,7 +6,7 @@ import type { ReplyDraftMockProps } from '../components/reply-draft-mock';
 export const hero = {
   announcement: {
     badge: 'New',
-    label: 'Tide drafts replies in your voice',
+    label: 'Hal drafts replies in your voice',
     href: '#tide',
   },
   // `accentWord` is coloured with the brand accent inside the headline.
@@ -15,7 +15,7 @@ export const hero = {
   text: 'Every conversation, order and note in one place. Teams reply 40% faster and keep CSAT above 95%.',
   primaryCta: {
     label: 'Start free trial',
-    href: 'https://example.com/signup',
+    href: '#/sign-up',
   },
   secondaryCta: { label: 'Book a demo', href: 'https://example.com/demo' },
 };
@@ -99,7 +99,7 @@ export const heroCustomer: CustomerProfileMockProps = {
 
 export const heroDraft: ReplyDraftMockProps = {
   to: 'Maya Ortiz',
-  label: 'Drafted by Tide',
+  label: 'Drafted by Hal',
   body: "Hi Maya, I'm sorry the lid arrived cracked. I've sent a replacement for order #4821 with express shipping, so it should be with you by Thursday. No need to return the old one.",
   sources: ['Order #4821', 'Replacement policy', 'Past tone with Maya'],
   actions: { primary: 'Send', secondary: 'Edit' },

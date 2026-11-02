@@ -180,7 +180,7 @@ export function CustomerSpotlight({
 
 function QuoteIcon() {
   return (
-    <svg viewBox="0 0 32 24" aria-hidden="true" className="h-6 w-8 text-accent">
+    <svg viewBox="0 0 32 24" aria-hidden="true" className="h-6 w-8 text-warm">
       <path
         fill="currentColor"
         d="M0 24V14C0 6.5 4 1.6 11 0l1.5 3.4C8.4 4.9 6.6 7.6 6.4 11H12v13H0Zm19 0V14c0-7.5 4-12.4 11-14l1.5 3.4c-4.1 1.5-5.9 4.2-6.1 7.6H31v13H19Z"

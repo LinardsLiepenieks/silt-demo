@@ -8,8 +8,8 @@ export type ChatMessage = {
   text: string;
   /** Customer messages sit on the right in the accent colour. */
   fromCustomer?: boolean;
-  /** Sent by Tide, shown with the brand mark instead of initials. */
-  fromTide?: boolean;
+  /** Sent by Hal, shown with the brand mark instead of initials. */
+  fromAssistant?: boolean;
   tint?: Tint;
 };
 
@@ -58,7 +58,7 @@ export function ChatMock({
               key={message.time + message.text}
               className="flex items-end gap-2"
             >
-              {message.fromTide ? (
+              {message.fromAssistant ? (
                 <BrandMark className="size-7 shrink-0" />
               ) : (
                 <Avatar

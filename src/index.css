@@ -11,20 +11,23 @@
   --radius-4xl: 2rem;
 
   --color-background: #ffffff;
-  --color-foreground: #141a19;
-  --color-muted-foreground: #5c6663;
-  --color-border: #e6e8e6;
-  /* Warm grey panels and the one brand accent, a calm sea green. */
-  --color-surface: #f5f4f1;
-  --color-accent: #0e7c66;
-  --color-accent-strong: #0a5f4e;
-  --color-accent-soft: #e2f1ec;
+  --color-foreground: #172022;
+  --color-muted-foreground: #5d686a;
+  --color-border: #e4e8e8;
+  /* Warm off-white panels, a clear turquoise accent and an apricot. */
+  --color-surface: #f7f5f2;
+  --color-accent: #0b8a95;
+  --color-accent-strong: #08707a;
+  --color-accent-soft: #dcf3f4;
+  --color-warm: #e2703b;
+  --color-warm-strong: #b4552a;
+  --color-warm-soft: #fde9dc;
   /* Soft highlight colours for notes, tags and slide backdrops. */
-  --color-tint-mint: #d9efe6;
-  --color-tint-sand: #f6ead2;
-  --color-tint-sky: #dcebf7;
-  --color-tint-rose: #f6dfe3;
-  --color-tint-lilac: #e6e1f4;
+  --color-tint-mint: #d5f1f2;
+  --color-tint-sand: #fbe8d9;
+  --color-tint-sky: #e1ecf6;
+  --color-tint-rose: #f8e2de;
+  --color-tint-lilac: #eae5f3;
 
   --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
 

@@ -1,5 +1,6 @@
 import { useRef, type ReactNode } from 'react';
 import { hero, heroIntervalMs, heroStepLabels } from '../content/hero';
+import { Link } from '../lib/router';
 import { useSlideshow } from '../lib/use-slideshow';
 import { ArrowRightIcon } from './arrow-right-icon';
 import { CustomerProfileMock } from './customer-profile-mock';
@@ -39,7 +40,7 @@ function Headline({
   return (
     <>
       {title.slice(0, at)}
-      <span className="text-accent">{accentWord}</span>
+      <span className="text-warm">{accentWord}</span>
       {title.slice(at + accentWord.length)}
     </>
   );
@@ -59,7 +60,7 @@ export function Hero({
   text?: string;
 }) {
   return (
-    <section className="bg-background">
+    <section className="bg-[radial-gradient(60%_70%_at_0%_0%,var(--color-accent-soft),transparent_70%),radial-gradient(50%_60%_at_100%_10%,var(--color-warm-soft),transparent_70%)]">
       <div className="container grid grid-cols-1 items-center gap-12 pt-10 pb-16 md:pt-14 md:pb-24 lg:grid-cols-[minmax(0,1fr)_minmax(0,520px)] lg:gap-16 xl:grid-cols-[minmax(0,1fr)_minmax(0,580px)]">
         <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:text-left">
           <Announcement />
@@ -70,13 +71,13 @@ export function Hero({
             {text}
           </p>
           <div className="mt-2 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-            <a
+            <Link
               href={hero.primaryCta.href}
               className={`${ctaBase} bg-accent text-white shadow-sm hover:bg-accent-strong`}
             >
               {hero.primaryCta.label}
               <ArrowRightIcon className="size-4" />
-            </a>
+            </Link>
             <a
               href={hero.secondaryCta.href}
               className={`${ctaBase} border border-border bg-white text-foreground hover:bg-surface`}
@@ -133,7 +134,7 @@ export function ProductSlideshow({
   return (
     <div
       ref={root}
-      className="mx-auto flex w-full max-w-[600px] flex-col items-center gap-6 rounded-[32px] bg-surface px-5 pt-10 pb-6 sm:px-10 sm:pt-14 lg:mr-0"
+      className="mx-auto flex w-full max-w-[600px] flex-col items-center gap-6 rounded-[32px] bg-linear-to-br from-accent-soft via-surface to-warm-soft px-5 pt-10 pb-6 sm:px-10 sm:pt-14 lg:mr-0"
     >
       <div className="grid w-full justify-items-center">
         {slides.map((slide, index) => {

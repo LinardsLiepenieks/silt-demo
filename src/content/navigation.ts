@@ -62,7 +62,7 @@ const resourceItems: NavMenuItem[] = [
   },
   {
     title: 'Docs',
-    description: 'Set up, configure and build on Tidewell.',
+    description: 'Set up, configure and build on Halcyon.',
     href: 'https://example.com/docs',
     isExternal: true,
   },
@@ -76,7 +76,7 @@ const resourceItems: NavMenuItem[] = [
 const companyItems: NavMenuItem[] = [
   {
     title: 'About',
-    description: 'Who we are and why we build Tidewell.',
+    description: 'Who we are and why we build Halcyon.',
     href: '#about',
   },
   {
@@ -115,6 +115,6 @@ export const navEntries: NavEntry[] = [
 ];
 
 export const headerCtas = {
-  signIn: { label: 'Sign in', href: 'https://example.com/sign-in' },
-  trial: { label: 'Start free trial', href: 'https://example.com/start' },
+  signIn: { label: 'Sign in', href: '#/sign-in' },
+  trial: { label: 'Start free trial', href: '#/sign-up' },
 };

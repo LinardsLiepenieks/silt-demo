@@ -1,3 +1,4 @@
+import { Link } from '../lib/router';
 import { useEffect, useState } from 'react';
 import { headerCtas, navEntries, siteUrl } from '../content/navigation';
 import { BrandMark, BrandWordmark } from './brand-logo';
@@ -44,7 +45,7 @@ export function SiteHeader() {
     >
       <div className="container flex h-16 items-center gap-6">
         <div className="flex flex-1 items-center">
-          <a href={siteUrl} aria-label="Tidewell" className="flex items-center">
+          <a href={siteUrl} aria-label="Halcyon" className="flex items-center">
             <span className="flex lg:hidden">
               <BrandMark className="size-8" />
             </span>
@@ -57,18 +58,18 @@ export function SiteHeader() {
           <NavMenu entries={navEntries} />
         </div>
         <div className="flex flex-1 items-center justify-end gap-1.5 lg:gap-2">
-          <a
+          <Link
             href={headerCtas.signIn.href}
             className={`${buttonBase} ${signInClass} hidden h-9 px-3.5 text-sm sm:inline-flex`}
           >
             {headerCtas.signIn.label}
-          </a>
-          <a
+          </Link>
+          <Link
             href={headerCtas.trial.href}
             className={`${buttonBase} ${trialClass} inline-flex h-9 px-3.5 text-sm lg:px-4`}
           >
             {headerCtas.trial.label}
-          </a>
+          </Link>
           <div className="lg:hidden">
             <MobileNav entries={navEntries} />
           </div>

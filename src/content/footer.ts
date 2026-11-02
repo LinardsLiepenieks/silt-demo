@@ -47,13 +47,13 @@ export const footerColumns: FooterColumn[] = [
 ];
 
 export const socialLinks = {
-  x: { label: 'Tidewell on X', href: 'https://example.com/x' },
+  x: { label: 'Halcyon on X', href: 'https://example.com/x' },
   linkedIn: {
-    label: 'Tidewell on LinkedIn',
+    label: 'Halcyon on LinkedIn',
     href: 'https://example.com/linkedin',
   },
   youTube: {
-    label: 'Tidewell on YouTube',
+    label: 'Halcyon on YouTube',
     href: 'https://example.com/youtube',
   },
 };
@@ -64,4 +64,4 @@ export const legalLinks: FooterLink[] = [
   { label: 'Cookies', href: '#cookies' },
 ];
 
-export const copyright = '© 2026 Tidewell. A Silt demo.';
+export const copyright = '© 2026 Halcyon. A Silt demo.';

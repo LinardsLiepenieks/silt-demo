@@ -9,7 +9,7 @@ export function StatementBanner({
 }: Partial<typeof statement>) {
   return (
     <section className="container py-8 md:py-12">
-      <div className="relative overflow-hidden rounded-4xl bg-accent-soft px-6 py-16 text-center md:py-24">
+      <div className="relative overflow-hidden rounded-4xl bg-linear-to-br from-accent-soft via-white to-warm-soft px-6 py-16 text-center md:py-24">
         <Waves />
         <div className="relative mx-auto flex max-w-2xl flex-col items-center">
           <h2 className="font-display text-4xl leading-[1.05] font-bold tracking-[-0.03em] text-balance sm:text-5xl md:text-6xl">

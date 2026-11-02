@@ -21,7 +21,7 @@ export const spotlight = {
   },
   caseStudy: {
     company: 'Carta Coffee',
-    periods: { before: 'Before', after: 'With Tidewell' },
+    periods: { before: 'Before', after: 'With Halcyon' },
     metrics: [
       {
         label: 'First response time',

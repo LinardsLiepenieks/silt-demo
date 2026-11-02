@@ -20,7 +20,7 @@ export type InboxMockProps = {
   conversations: InboxConversation[];
 };
 
-const slaStyles: Record<SlaTone, string> = {
+export const slaStyles: Record<SlaTone, string> = {
   warn: 'bg-tint-sand text-[#8a5a12]',
   ok: 'bg-accent-soft text-accent-strong',
   done: 'bg-surface text-muted-foreground',

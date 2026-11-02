@@ -10,7 +10,7 @@ export type ReplyDraftMockProps = {
   actions: { primary: string; secondary: string };
 };
 
-/** A reply Tide has drafted, with the records it drew on. */
+/** A reply Hal has drafted, with the records it drew on. */
 export function ReplyDraftMock({
   to = heroDraft.to,
   label = heroDraft.label,

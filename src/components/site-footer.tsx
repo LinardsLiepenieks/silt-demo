@@ -119,7 +119,7 @@ export function SiteFooter() {
       <div className="container pt-14 pb-10 lg:pt-20">
         <div className="grid gap-10 lg:grid-cols-6 lg:gap-8">
           <div className="space-y-5 lg:col-span-2">
-            <a href={siteUrl} aria-label="Tidewell" className="inline-flex">
+            <a href={siteUrl} aria-label="Halcyon" className="inline-flex">
               <BrandWordmark />
             </a>
             <p className="max-w-64 text-sm text-muted-foreground">
